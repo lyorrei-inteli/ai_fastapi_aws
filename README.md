@@ -125,7 +125,7 @@ Caso queira acessar a documentação da API, após rodar a api, acesse o link ab
 
 ## Vídeo Demonstrativo
 
-[Link para o vídeo demonstrativo do funcionamento do modelo em produção](#) (Aqui você irá inserir o link do vídeo)
+[Link para o vídeo demonstrativo do funcionamento do modelo em produção](https://youtu.be/_uU2IMef9C0) (https://youtu.be/_uU2IMef9C0)
 
 
 ## Como Executar a Aplicação no EC2 da AWS
@@ -186,4 +186,7 @@ Caso queira acessar a documentação da API, após rodar a api, acesse o link ab
    - Com um navegador ou cliente HTTP, vá para:
    ```
    http://YOUR-EC2-IP:8000
+
+   # example
+   http://3.87.88.55:8000/docs
    ```

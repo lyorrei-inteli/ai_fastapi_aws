@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Instalando as bibliotecas necessárias
-RUN pip install fastapi pandas "pycaret[full]" uvicorn
+RUN pip install fastapi pandas pycaret uvicorn
 
 # Comando para executar a aplicação
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
