@@ -18,7 +18,8 @@ As seguintes ferramentas foram utilizadas:
 - **PyCaret**: Framework de Machine Learning utilizado para treinamento e avaliação do modelo.
 - **Jupyter Notebook**: Ambiente de desenvolvimento interativo para a construção dos notebooks de ETL e modelagem.
 
-### Como Executar
+### Como Executar localmente
+#### Via normal
 1. Acesse o diretório do projeto.
 2. Descomprima o arquivo `/data/highway_crashes.zip` para obter os arquivos de dados (git não deixou subir os dois arquivos completos por causa do tamanho).
 3. Certifique-se de ter todas as ferramentas mencionadas acima instaladas:
@@ -34,6 +35,19 @@ As seguintes ferramentas foram utilizadas:
     ``
 
 Caso queira realizar a etapa de ETL novamente, execute o arquivo `/model/etl.ipynb`. Para realizar o treinamento do modelo novamente, execute o arquivo `/model/training.ipynb`.
+
+#### Via Docker
+1. Acesse o diretório do projeto.
+2. Descomprima o arquivo `/data/highway_crashes.zip` para obter os arquivos de dados (git não deixou subir os dois arquivos completos por causa do tamanho).
+3. Certifique-se de ter o Docker instalado.
+4. Execute o seguinte comando para obter a imagem:
+   ```bash
+   docker pull lyorrei/ai_fastapi_aws:v1
+   ```
+5. Inicie a aplicação com:
+   ```
+    docker run -d -p 8000:8000 lyorrei/ai_fastapi_aws:v1
+   ```
 
 ## Estrutura dos Arquivos
 
@@ -187,6 +201,6 @@ Caso queira acessar a documentação da API, após rodar a api, acesse o link ab
    ```
    http://YOUR-EC2-IP:8000
 
-   # example
+   # Exemplo
    http://3.87.88.55:8000/docs
    ```
